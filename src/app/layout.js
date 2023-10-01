@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className} class="w-screen h-screen custom-background2">
+      <body className={inter.className} class=" w-screen h-screen custom-background2">
       <NavBar/>
 
         {children}</body>
