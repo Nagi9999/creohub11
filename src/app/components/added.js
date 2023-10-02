@@ -31,7 +31,7 @@ const AddJob = () => {
       description:
         "  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio nec libero consequat facilisis. Nulla facilisi. Sed ac lectus et metus  convallis pellentesque. Vestibulum sit amet felis sit amet odio tristique volutpat. ",
       bgColor: "custom-white0",
-    },
+    }, 
   ];
 
   return (

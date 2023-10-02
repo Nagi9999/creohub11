@@ -3,6 +3,7 @@ import Index from './home/home'
 import How from './components/how'
 import Catego from './components/categories'
 import AddJob from './components/added'
+import Feedback from './components/feedback'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <How/>
       <Catego/>
      <AddJob/>
+     <Feedback/>
     </main>
   )
 }
