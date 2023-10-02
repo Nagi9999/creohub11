@@ -71,7 +71,9 @@ const Catego = () => {
   ];
 
   return (
-    <div className="custom-green00   flex flex-col justify-center custom-family pt-16  mt-0 ">
+    <div className="  flex flex-col justify-center custom-family   mt-0  relative">
+      <div className="custom-green0 absolute inset-0 opacity-5 pt-16 "></div>
+      <div className="2xl:container sm:mx-auto">
       <div className="flex flex-col justify-center mx-auto text-center sm:max-w-[55%] max-w-[90%]  ">
         <h1 className="sm:text-3xl text-xl font-bold sm:my-8 my-4 ">
           Popular Job Categories
@@ -143,12 +145,14 @@ const Catego = () => {
 
       <div className="  flex justify-center mb-16">
         <button
-          className="sm:text-lg text-xs custom-green1 bg-transparent sm:font-semibold font-normal sm:rounded-[10px] rounded-[3.5px] sm:border-4 border-2  sm:w-[188px] w-[74px] sm:h-[61px] h-[24px] sm:px-3 px-1 my-8"
+          className="sm:text-lg text-xs custom-green1 bg-transparent sm:font-semibold font-normal sm:rounded-[10px] rounded-[3.5px]  border-2  sm:w-[188px] w-[74px] sm:h-[61px] h-[24px] sm:px-3 px-1 my-8"
           type="view more"
         >
           View More
         </button>
       </div>
+      </div>
+      
     </div>
   );
 };

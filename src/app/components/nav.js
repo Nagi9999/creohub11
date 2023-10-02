@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function NavBar() {
@@ -8,14 +9,29 @@ export default function NavBar() {
     setMenuOpen(!menuOpen);
   };
 
-  const menuItems = ["Home", "Job", "About Us", "Contact"];
+  const menuItems = [
+  {title:"Home",
+  path:"/",
+},
+  {title:"Job",
+  path:"/",
+},
+  {title:"About Us",
+  path:"/",
+},
+  {title:"Contact",
+  path:"/",
+},
+];
 
   return (
-    <nav className=" w-full  flex sm:flex-row flex-col  justify-center  custom-family custom-background1 m-0 custom-border0 border border-dashed  ">
-      <div className="flex justify-between  sm:w-[60%]    h-full   ">
-        <div className="flex flex-col sm:max-w-[70%] sm:px-8 px-0  mx-auto  ">
+    <div className="w-full   custom-family custom-background1 m-0 custom-border0">
+    <nav className="  2xl:container mx-auto flex sm:flex-row flex-col  justify-center   ">
+      
+      <div className="  flex sm:justify-between justify-end sm:w-[60%] w-full    h-full   ">
+        <div className="flex flex-col sm:max-w-[800px]  sm:px-8 px-0  sm:mr-auto  ">
           <div className="flex flex-row sm:justify-between justify-end sm:mt-16 mt-[13px] items-center">
-            <div className="  font-extrabold	text-3xl ">
+            <div className="  font-extrabold	sm:text-5xl text-3xl ">
               <span className="text-black">Job</span>
               <span className="custom-green1">NQw</span>
             </div>
@@ -48,10 +64,11 @@ export default function NavBar() {
             </div>
 
             <div className={"hidden sm:block"}>
-              <ul className=" flex   justify-between   sm:space-x-[52px]  font-semibold  ">
+              <ul className=" flex   justify-between  text-lg  sm:space-x-[52px]  font-semibold  ">
                 {menuItems.map((item, index) => (
                   <li key={index}>
-                    <span>{item}</span>
+                    <Link href={item.path}><span>{item.title}</span></Link>
+                    
                   </li>
                 ))}
               </ul>
@@ -59,13 +76,13 @@ export default function NavBar() {
           </div>
           <div className={" sm:hidden  block"}>
             <ul
-              className={`sm:flex sm:flex-row flex-col justify-center items-center ${
+              className={`sm:flex sm:flex-row flex-col font-semibold  justify-center items-center ${
                 menuOpen ? "flex" : "hidden"
               } sm:space-x-4 space-x-0 sm:space-y-0 space-y-2 mt-3`}
             >
               {menuItems.map((item, index) => (
                 <li key={index}>
-                  <span>{item}</span>
+                    <Link href={item.path}><span>{item.title}</span></Link>
                 </li>
               ))}
             </ul>
@@ -87,7 +104,7 @@ export default function NavBar() {
             <div className="flex justify-between sm:mt-[57px] mt-[30px] background-color  custom-white0   sm:rounded-[20px] rounded-[4.9px] sm:text-base text-[9px] items-center  ">
               <div className="m-[20px] text-black">
                 <input
-                  className="sm:w-[255px] w-[126px] sm:h-[44px] h-[22px] rounded custom-background1 placeholder-black placeholder-opacity-100  icon-input00"
+                  className="sm:w-[255px] w-[126px] sm:h-[44px] h-[22px] sm:rounded-[10px] rounded-[4.9px] custom-background1 placeholder-black placeholder-opacity-100  icon-input00"
                   type="text"
                   placeholder="Job title or keyword"
                   required
@@ -96,7 +113,7 @@ export default function NavBar() {
 
               <div className="sm:my-[20px] my-[10px] text-black">
                 <input
-                  className="sm:w-[210px] w-[103px] sm:h-[44px] h-[22px] rounded custom-background1 placeholder-black placeholder-opacity-100  icon-input11"
+                  className="sm:w-[210px] w-[103px] sm:h-[44px] h-[22px] sm:rounded-[10px] rounded-[4.9px] custom-background1 placeholder-black placeholder-opacity-100  icon-input11"
                   type="text"
                   placeholder="Locations"
                   required
@@ -151,5 +168,6 @@ export default function NavBar() {
         </div>
       </div>
     </nav>
+    </div>
   );
 }

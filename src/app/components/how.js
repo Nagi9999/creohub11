@@ -23,7 +23,8 @@ const How = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center custom-family custom-background2 mt-16">
+    <div className="justify-center custom-family custom-background2 ">
+       <div className="flex flex-col 2xl:container mx-auto p-3 mt-16">
       <div className="w-full sm:mx-0 mx-auto items-center ">
         <div>
           <h1 className="sm:text-4xl text-xl font-bold sm:px-0 px-3">How it works</h1>
@@ -36,7 +37,7 @@ const How = () => {
             tristique volutpat.
           </p>
           <button
-            className="sm:block hidden custom-green1 font-semibold rounded-[10px] border-4 border-custom-green1 sm:w-[188px] w-[74px] sm:h-[61px] h-[24px] px-3 mt-4 sm:mt-0"
+            className="sm:block hidden custom-green1 font-semibold rounded-[10px] border-2 border-custom-green1 sm:w-[188px] w-[74px] sm:h-[61px] h-[24px] px-3 mt-4 sm:mt-0"
             type="learn more"
           >
             Learn More
@@ -86,7 +87,7 @@ const How = () => {
           </p>
 
           <button
-            className="sm:text-lg text-xs custom-green1 sm:font-semibold font-normal sm:rounded-[10px] rounded-[3.5px] sm:border-4 border-2 border-custom-green1 sm:w-[188px] w-[74px] sm:h-[61px] h-[24px] sm:px-3 px-1 mt-8"
+            className="sm:text-lg text-xs custom-green1 sm:font-semibold font-normal sm:rounded-[10px] rounded-[3.5px]  border-2 border-custom-green1 sm:w-[188px] w-[74px] sm:h-[61px] h-[24px] sm:px-3 px-1 mt-8"
             type="submit"
           >
             Learn More
@@ -94,6 +95,8 @@ const How = () => {
         </div>
       </div>
     </div>
+    </div>
+   
   );
 };
 

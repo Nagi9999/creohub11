@@ -6,7 +6,7 @@ import AddJob from './components/added'
 
 export default function Home() {
   return (
-    <main className="2xl:container mx-auto flex flex-col justify-center  ">
+    <main className="  flex flex-col justify-center  ">
       
       <How/>
       <Catego/>
