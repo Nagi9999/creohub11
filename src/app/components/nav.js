@@ -29,7 +29,7 @@ export default function NavBar() {
     <nav className="  2xl:container mx-auto flex sm:flex-row flex-col  justify-center   ">
       
       <div className="  flex sm:justify-between justify-end sm:w-[60%] w-full    h-full   ">
-        <div className="flex flex-col sm:max-w-[800px]  sm:px-8 px-0  sm:mr-auto  ">
+        <div className="flex flex-col sm:max-w-[800px]  sm:px-20 px-0  sm:mr-auto  ">
           <div className="flex flex-row sm:justify-between justify-end sm:mt-16 mt-[13px] items-center">
             <div className="  font-extrabold	sm:text-5xl text-3xl ">
               <span className="text-black">Job</span>
@@ -89,9 +89,9 @@ export default function NavBar() {
           </div>
 
           <div class="  sm:mt-32 mt-6 pt-10 sm:bg-transparent custom-background2 sm:pb-0 pb-16 sm:px-0 px-4">
-            <div className="sm:text-justify text-center sm:mx-0 mx-   ">
-              <h1 className="sm:text-6xl text-xl font-extrabold ">
-                Search, Find, & Apply
+            <div className="sm:text-justify text-center sm:mx-0 mx-8   ">
+              <h1 className="sm:text-6xl text-xl font-extrabold  ">
+                Search,Find,&Apply
               </h1>
               <p className="sm:text-xl text-xs sm:mt-[32px] mt-[20px] sm:mr-[130px] mr-0 ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
@@ -101,10 +101,10 @@ export default function NavBar() {
               </p>
             </div>
 
-            <div className="flex justify-between sm:mt-[57px] mt-[30px] background-color  custom-white0   sm:rounded-[20px] rounded-[4.9px] sm:text-base text-[9px] items-center  ">
-              <div className="m-[20px] text-black">
+            <div className="flex sm:justify-between justify-center  sm:mt-[57px] mt-[20px] background-color  custom-white0   sm:rounded-[20px] rounded-[4.9px] sm:text-base text-[9px] items-center  ">
+              <div className="m-[10px] text-black">
                 <input
-                  className="sm:w-[255px] w-[126px] sm:h-[44px] h-[22px] sm:rounded-[10px] rounded-[4.9px] custom-background1 placeholder-black placeholder-opacity-100  icon-input00"
+                  className="sm:px-4 px-0 sm:py-2 py-1 sm:rounded-[10px] rounded-[4.9px] custom-background1 placeholder-black placeholder-opacity-100  icon-input00"
                   type="text"
                   placeholder="Job title or keyword"
                   required
@@ -113,7 +113,7 @@ export default function NavBar() {
 
               <div className="sm:my-[20px] my-[10px] text-black">
                 <input
-                  className="sm:w-[210px] w-[103px] sm:h-[44px] h-[22px] sm:rounded-[10px] rounded-[4.9px] custom-background1 placeholder-black placeholder-opacity-100  icon-input11"
+                  className="sm:px-4 px-0 sm:py-2 py-1   sm:rounded-[10px] rounded-[4.9px] custom-background1 placeholder-black placeholder-opacity-100  icon-input11"
                   type="text"
                   placeholder="Locations"
                   required
@@ -123,7 +123,7 @@ export default function NavBar() {
               <div></div>
               <div>
                 <button
-                  className="custom-green0 text-white sm:rounded-[10px] rounded-[4.9px]  sm:w-[103px] w-[50px] sm:h-[44px] h-[22px] sm:m-[20px] m-[10px] "
+                  className="custom-green0 text-white sm:rounded-[10px] rounded-[4.9px] sm:py-2 py-1 sm:px-3 px-2 sm:m-[20px] m-[10px] "
                   type="submit"
                 >
                   Search
@@ -134,38 +134,45 @@ export default function NavBar() {
         </div>
       </div>
 
-      <div className=" sm:w-[40%] w-full h-full   custom-green0 opacity-100 mt-0 	sm:rounded-bl-[50px] rounded-none">
-        <div className=" ml-[15%]  space-x-[52px]  sm:flex hidden mt-16 items-center justify-center ">
+      <div className=" sm:w-[40%] w-full h-full   custom-green0 opacity-100  	sm:rounded-bl-[50px] rounded-none px-10">
+        <div className="   space-x-[52px]  sm:flex hidden mt-16 items-center justify-end ">
           <h3 className="text-white  ">Sign in</h3>
           <button
-            className="custom-white0   font-semibold text-black rounded-[10px]  w-[202px] h-[44px]  icon-input3 "
+            className="custom-white0   font-semibold text-black rounded-[10px] px-4 py-2 icon-input3 "
             type="submit"
           >
             Create Account
           </button>
         </div>
-        <div class="box-border custom-white0 sm:mt-[10%] mt-[17px] sm:ml-[15%] ml-[59px] sm:h-[82px] h-[48px] sm:w-[82px] w-[48px] p-1 rounded-[10px] rotate-custom0   ">
+        <div className="sm:mt-[50px] mt-[17px] sm:ml-[40px] ml-[59px]">
+        <div class="box-border custom-white0  sm:h-[82px] h-[48px] sm:w-[82px] w-[48px] p-1 rounded-[10px] rotate-custom0 flex flex-col items-center justify-center  ">
           <img
             src="/icons/0.png"
             alt="Your Icon"
-            class="sm:m-[23px] m-[11px] rounded-[10px] sm:w-[40px] w-[23px] sm:h-[40px] h-[23px] "
+            class=" rounded-[10px] sm:w-[40px] w-[23px] sm:h-[40px] h-[23px] "
           />
         </div>
-        <div class="box-border custom-white0 sm:ml-[80%] ml-[279PX] sm:mt-[5%] mt-[41px] sm:h-[87px] h-[51px] sm:w-[87px] w-[51px] p-1 rounded-[10px] rotate-custom1   ">
+        </div>
+        <div className="sm:ml-[400px] ml-[250px] sm:mt-[50px] mt-[0px]">
+        <div class="box-border custom-white0  sm:h-[87px] h-[51px] sm:w-[87px] w-[51px] p-1 rounded-[10px] rotate-custom1  flex flex-col items-center justify-center   ">
           <img
             src="/icons/1.png"
             alt="Your Icon"
-            class="sm:m-[23px] m-[12px] rounded-[10px] sm:w-[40px] w-[23px] sm:h-[40px] h-[23px]"
+            class=" rounded-[10px] sm:w-[40px] w-[23px] sm:h-[40px] h-[23px]"
           />
         </div>
-
-        <div class="box-border custom-white0 sm:my-[20%] my-12  sm:ml-[10%] ml-[46px] sm:h-[85px] h-[51px] sm:w-[85px] w-[51px] p-1 rounded-[10px] rotate-custom2    ">
+        </div>
+        
+              <div className=" sm:my-[100px] my-12  sm:ml-[20px] ml-[46px]  ">
+              <div class="box-border custom-white0 sm:h-[85px] h-[51px] sm:w-[85px] w-[51px] p-1 rounded-[10px] rotate-custom2 flex flex-col items-center justify-center    ">
           <img
             src="/icons/2.png"
             alt="Your Icon"
-            class="sm:m-[23px] m-[12px] rounded-[10px] sm:w-[40px] w-[23px] sm:h-[40px] h-[23px] "
+            class=" rounded-[10px] sm:w-[40px] w-[23px] sm:h-[40px] h-[23px] "
           />
         </div>
+              </div>
+        
       </div>
     </nav>
     </div>

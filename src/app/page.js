@@ -4,6 +4,8 @@ import How from './components/how'
 import Catego from './components/categories'
 import AddJob from './components/added'
 import Feedback from './components/feedback'
+import Footer from './components/footer'
+import Banner from './components/banner'
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <Catego/>
      <AddJob/>
      <Feedback/>
-    </main>
+     <Banner/>
+    <Footer/>
+      </main>
   )
 }
