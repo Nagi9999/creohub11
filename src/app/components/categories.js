@@ -71,14 +71,14 @@ const Catego = () => {
   ];
 
   return (
-    <div className="  flex flex-col justify-center custom-family   mt-0  relative">
+    <div className="   justify-center custom-family   mt-0  relative">
       <div className="custom-green0 absolute inset-0 opacity-5 pt-16 "></div>
-      <div className="2xl:container sm:mx-auto">
+      <div className="2xl:container sm:mx-auto mx-3">
         <div className="flex flex-col justify-center mx-auto text-center sm:max-w-[55%] max-w-[90%]  ">
           <h1 className="sm:text-3xl text-xl font-bold sm:my-8 my-4 ">
             Popular Job Categories
           </h1>
-          <p className="sm:text-lg text-xs">
+          <p className="sm:text-lg text-xs text-gray-500">
             {" "}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio
             nec libero consequat facilisis. Nulla facilisi. Sed ac lectus et
@@ -87,29 +87,42 @@ const Catego = () => {
           </p>
         </div>
 
-        <div className="sm:flex hidden flex-row  justify-between sm:mt-16 mt-4">
+        <div className="   justify-between sm:mt-10 mt-2">
           <Swiper
             modules={[Virtual]}
             spaceBetween={38}
-            slidesPerView={4}
-            virtual
+            slidesPerView={3}
+            virtual 
+            
+            breakpoints={
+              {
+                640:{slidesPerView:3,spaceBetween:14,
+                },
+                768:{slidesPerView:3,spaceBetween:24,
+                },
+                1024:{slidesPerView:4,spaceBetween:38,
+                },
+
+
+              }
+            }
           >
             {Data.map((item, index) => {
               return (
                 <SwiperSlide key={item} virtualIndex={index}>
                   <div
                     key={item.title}
-                    className={`flex flex-col justify-between sm:h-[219px] h-[100px] sm:w-[286px] w-[150px] ${item.bgColor} sm:rounded-md rounded-[7.4px] sm:mx-4 mx-1 text-justify   sm:my-8 my-16 `}
+                    className={`flex flex-col justify-between sm:h-[219px] h-[100px] sm:w-[286px] w-[103px] ${item.bgColor} sm:rounded-md rounded-[7.4px] sm:mx-4 mx-1 text-justify   sm:my-8 my-4 `}
                   >
                     <img
                       src={item.icon}
                       alt="Your Icon"
-                      className="sm:m-[23px] m-[11px] rounded-[10px] sm:w-[40px] w-[23px] sm:h-[40px] h-[23px]"
+                      className="sm:m-[23px] m-[11px] rounded-[10px] sm:w-[40px] w-[18px] sm:h-[40px] h-[18px]"
                     />
-                    <h3 className="font-bold   sm:text-lg text-[10px] sm:pl-5 pl-1  pr-[50%] tracking-tight">
+                    <h3 className="font-bold   sm:text-lg text-[10px] sm:pl-5 pl-1  sm:pr-[143px] pr-8 sm:tracking-tight ">
                       {item.title}
                     </h3>
-                    <p className="sm:text-[10px] text-[8px]  text-gray-500 pl-5  my-auto">
+                    <p className="sm:text-[10px] text-[8px]  text-gray-500 sm:pl-5 pl-1 sm:my-auto my-4">
                       {item.text}
                     </p>
                   </div>
@@ -119,37 +132,7 @@ const Catego = () => {
           </Swiper>
         </div>
 
-        <div className="sm:hidden flex flex-row  justify-between  sm:mt-16 mt-4">
-          <Swiper
-            modules={[Virtual]}
-            spaceBetween={14}
-            slidesPerView={3}
-            virtual
-          >
-            {Data.map((item, index) => {
-              return (
-                <SwiperSlide key={item} virtualIndex={index}>
-                  <div
-                    key={item.title}
-                    className={`flex flex-col justify-between sm:h-[219px] h-[100px] sm:w-[286px] w-[130px] ${item.bgColor} sm:rounded-md rounded-[7.4px] sm:mx-4 mx-3 text-justify pl-1   sm:my-8 my-16 `}
-                  >
-                    <img
-                      src={item.icon}
-                      alt="Your Icon"
-                      className="sm:m-[23px] m-[11px] rounded-[10px] sm:w-[40px] w-[23px] sm:h-[40px] h-[23px]"
-                    />
-                    <h3 className="font-bold   sm:text-lg text-[10px] sm:pl-5   pr-[50%] tracking-tight">
-                      {item.title}
-                    </h3>
-                    <p className="sm:text-[10px] text-[8px]  text-gray-500   my-auto">
-                      {item.text}
-                    </p>
-                  </div>
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-        </div>
+        
 
         <div className="  flex justify-center mb-16">
           <button

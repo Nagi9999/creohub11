@@ -49,7 +49,7 @@ const How = () => {
             return (
               <div
                 key={item.title} 
-                className="sm:h-[219px] h-[100px] sm:w-[286px] w-[131px] custom-white0 rounded-md mx-4 text-justify items-center sm:my-8 my-16 "
+                className="sm:h-[219px] h-[100px] sm:w-[286px] w-[131px] custom-white0 rounded-md mx-4 text-justify items-center sm:px-6 px-2 sm:my-8 my-16 "
               >
                 <img
                   src={item.icon}
@@ -57,7 +57,7 @@ const How = () => {
                   className="sm:m-[23px] m-[11px] rounded-[10px] sm:w-[40px] w-[23px] sm:h-[40px] h-[23px]"
                 />
                 <h3 className="font-bold   sm:text-lg text-sm">{item.title}</h3>
-                <p className="text-[10px] text-gray-500">{item.text}</p>
+                <p className="sm:mt-4 mt-2 sm:text-[10px] text-[8px] text-gray-500">{item.text}</p>
               </div>
             );
           })}
@@ -79,7 +79,7 @@ const How = () => {
           <h1 className="sm:text-5xl text-xl font-semibold ">
             We will help you to become an employee in your dream company
           </h1>
-          <p className="mt-12 sm:text-lg text-xs  text-gray-500">
+          <p className="sm:mt-12 mt-6 sm:text-lg text-xs  text-gray-500">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio
             nec libero consequat facilisis. Nulla facilisi. Sed ac lectus et metus
             convallis pellentesque. Vestibulum sit amet felis sit amet odio
@@ -87,7 +87,7 @@ const How = () => {
           </p>
 
           <button
-            className="sm:text-lg text-xs custom-green1 sm:font-semibold font-normal sm:rounded-[10px] rounded-[3.5px]  border-2 border-custom-green1 sm:w-[188px] w-[74px] sm:h-[61px] h-[24px] sm:px-3 px-1 mt-8"
+            className="sm:text-lg text-xs custom-green1 sm:font-semibold font-normal sm:rounded-[10px] rounded-[3.5px]  border-2 border-custom-green1 sm:w-[188px] w-[74px] sm:h-[61px] h-[24px] sm:px-3 px-1 sm:mt-8 mt-6"
             type="submit"
           >
             Learn More

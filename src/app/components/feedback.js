@@ -26,44 +26,44 @@ const Feedback = () => {
 
   return (
     <div className="2xl:container mx-auto">
-      <div className="flex flex-col sm:flex-row  sm:justify-between justify-center sm:my-20 my-16">
-        <div className="sm:w-[50%] ml-2 mt-6 sm:text-justify text-center  sm:px-0 px-3">
-          <h1 className="sm:text-5xl text-xl font-bold tracking-tight ">
+      <div className="flex flex-col sm:flex-row  sm:justify-between justify-center sm:my-20 my-8">
+        <div className="sm:w-[60%]  mt-6 sm:text-justify text-center  sm:px-0 px-8">
+          <h1 className="sm:text-5xl text-lg sm:tracking-normal tracking-tight font-bold  ">
             People's feedback about JobNow!
           </h1>
-          <p className="mt-10 sm:text-lg text-sm text-gray-500 ">
+          <p className="sm:mt-10 mt-4 sm:text-lg text-xs text-gray-500 ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <p className="mt-12 sm:text-lg text-xs font-semibold  ">
+          <p className="sm:mt-12 mt-6 sm:text-xl text-xs font-bold  ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio
             nec libero consequat facilisis. Nulla facilisi. Sed ac lectus et
             metus convallis pellentesque. Vestibulum sit amet felis sit amet
             odio tristique volutpat.
           </p>
-          <div className="sm:hidden flex justify-center sm:w-[28%] w-[187px] sm:rounded-[20px] rounded-[7.7px] sm:h-[400px] h-[183px] custom-green0  mt-24 sm:mx-0 mx-auto"></div>
+          <div className="sm:hidden flex justify-center sm:w-[400px] w-[187px] sm:rounded-[20px] rounded-[7.7px] sm:h-[400px] h-[183px] custom-green0  mt-14 sm:mx-0 mx-auto"></div>
             <div className="my-8">
-          <h1 className="font-bold mt-8 ">{feedbackTexts[currentText].name}</h1>
+          <h1 className="sm:text-2xl font-bold mt-8 ">{feedbackTexts[currentText].name}</h1>
           <p className="mt-5 sm:text-sm text-xs text-gray-500 ">{feedbackTexts[currentText].role}</p>
-            <div className='mt-8'>
+            <div className='sm:mt-8 mt-3'>
             <button
-              className="custom-background4  text-white font-bold py-3 px-3 rounded-[50%] mr-4"
+              className="   text-white font-bold py-3 px-3 rounded-[50%] mr-4"
               onClick={switchToPreviousText}
             >
-              &#8592; 
+              <img src='/icons/arrow1.png' className='sm:w-[50px] w-[21px] sm:h-[50px] h-[21px]'/> 
             </button>
             <button
-              className="custom-green0  text-white font-bold py-3 px-3 rounded-[50%] "
+              className=" text-white font-bold py-3 px-3 rounded-[50%] "
               onClick={switchToNextText}
             >
-              &#8594;
-            </button>
+                <img src='/icons/arrow2.png' className='sm:w-[50px] w-[21px] sm:h-[50px] h-[21px]'/>
+              </button>
             </div>
             
           </div>`
         </div>
         
-        <div className="sm:block hidden  sm:w-[28%] w-[187px] sm:rounded-[20px] rounded-[7.7px] sm:h-[400px] h-[183px] custom-green0  my-24 sm:mx-0 mx-auto"></div>
+        <div className="sm:flex hidden  sm:w-[474px] w-[187px] sm:rounded-[20px] rounded-[7.7px] sm:h-[484px] h-[183px] custom-green0  my-24 sm:mx-0 mx-auto"></div>
       </div>
       
     </div>
