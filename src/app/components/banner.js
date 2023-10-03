@@ -1,6 +1,6 @@
 const Banner = () => {
     return ( 
-        <div className="2xl:container sm:mx-auto  sm:mb-[200px] mb-[70px]">
+        <div className="2xl:container sm:mx-auto  sm:mb-[200px] mb-[100px]">
             <div className="2xl:container  sm:mx-0 mx-[25px]  text-white absolute    sm:rounded-[20px] rounded-[5.1px] custom-background5  ">
             <div className="flex flex-col justify-center mx-auto text-center sm:px-64 px-8  ">
         <h1 className="sm:text-3xl text-lg font-bold sm:my-8 my-2 ">
