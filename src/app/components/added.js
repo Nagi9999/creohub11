@@ -50,7 +50,7 @@ const AddJob = () => {
       </div>
 
       <div className="sm:flex hidden flex-row  justify-between sm:mt-16 mt-4">
-        <Swiper modules={[Virtual]} spaceBetween={20} slidesPerView={3} virtual>
+        <Swiper modules={[Virtual]} spaceBetween={50} slidesPerView={3} virtual>
           {Data.map((item, index) => {
             return (
               <SwiperSlide key={item} virtualIndex={index}>
@@ -103,7 +103,7 @@ const AddJob = () => {
       </div>
 
       <div className="sm:hidden flex flex-row  justify-between  sm:mt-16 mt-4">
-        <Swiper modules={[Virtual]} spaceBetween={20} slidesPerView={2} virtual>
+        <Swiper modules={[Virtual]} spaceBetween={19} slidesPerView={2} virtual>
           {Data.map((item, index) => {
             return (
               <SwiperSlide key={item} virtualIndex={index}>
