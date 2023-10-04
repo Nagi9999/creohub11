@@ -24,7 +24,7 @@ const How = () => {
 
   return (
     <div className="justify-center custom-family custom-background2 ">
-       <div className="flex flex-col 2xl:container mx-auto p-3 mt-16">
+       <div className="flex flex-col sm:px-20  2xl:container mx-auto p-3 mt-16">
       <div className="w-full sm:mx-0 mx-auto items-center ">
         <div>
           <h1 className="sm:text-4xl text-xl font-bold sm:px-0 px-3">How it works</h1>

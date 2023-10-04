@@ -14,7 +14,6 @@ const AddJob = () => {
       text: "Dimensiion Studio",
       description:
         "  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio nec libero consequat facilisis. Nulla facilisi. Sed ac lectus et metus  convallis pellentesque. Vestibulum sit amet felis sit amet odio tristique volutpat. ",
-      bgColor: "custom-white0",
     },
     {
       icon: "/icons/fullStack.png",
@@ -22,7 +21,6 @@ const AddJob = () => {
       text: "Alpander",
       description:
         "  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio nec libero consequat facilisis. Nulla facilisi. Sed ac lectus et metus  convallis pellentesque. Vestibulum sit amet felis sit amet odio tristique volutpat. ",
-      bgColor: "custom-white0",
     },
     {
       icon: "/icons/productDev.png",
@@ -30,13 +28,12 @@ const AddJob = () => {
       text: "XReact Tech",
       description:
         "  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio nec libero consequat facilisis. Nulla facilisi. Sed ac lectus et metus  convallis pellentesque. Vestibulum sit amet felis sit amet odio tristique volutpat. ",
-      bgColor: "custom-white0",
     }, 
   ];
 
   return (
     <div className="custom-background2 custom-family">
-      <div className="2xl:container mx-auto flex flex-col justify-center  sm:pt-16   ">
+      <div className="2xl:container sm:px-20 mx-auto flex flex-col justify-center  sm:pt-16   ">
       <div className="flex flex-col justify-center mx-auto text-center sm:max-w-[55%] max-w-[90%]  ">
         <h1 className="sm:text-4xl text-xl font-extrabold sm:my-8 my-4 ">
           Recently Added Jobs
@@ -68,38 +65,38 @@ const AddJob = () => {
               <SwiperSlide key={item} virtualIndex={index}>
                 <div
                   key={item.title}
-                  className={`flex flex-col justify-around sm:h-[510px] h-[250px] sm:w-[450px] w-[170px] ${item.bgColor} sm:rounded-md rounded-[7.4px] sm:mx-4 mx-3 text-justify sm:p-5 p-1   sm:my-8 my-8 `}
+                  className=" flex flex-col justify-between sm:px-[30px] px-[15px] sm:py-[50px] py-[20px] custom-white0 sm:rounded-md rounded-[7.4px]  text-justify     "
                 >
                   <img
                     src={item.icon}
                     alt="Your Icon"
                     className="  rounded-[10px] sm:w-[93px] w-[35px] sm:h-[93px] h-[35px]"
                   />
-                  <h3 className="font-extrabold   sm:text-lg text-[10px]     ">
+                  <h3 className="font-extrabold   sm:text-lg text-[10px] sm:mt-8 mt-4  ">
                     {item.title}
                   </h3>
-                  <p className="sm:text-xs text-[8px]  text-gray-500   ">
+                  <p className="sm:text-xs text-[8px]  text-gray-500 sm:my-4 my-2  ">
                     {item.text}
                   </p>
                   <p className="sm:text-[12px] text-[8px]  text-gray-500 sm:pr-16 pr-2 ">
                     {item.description}
                   </p>
 
-                  <div className=" my-[10px] text-black font-bold sm:text-xs text-[8px] ">
+                  <div className=" sm:my-6 my-4 text-black font-bold sm:text-xs text-[8px] ">
                     <div >
                       <button
-                      className="   sm:py-2 py-1 sm:px-8 px-2      sm:rounded rounded-none custom-background1 placeholder-black placeholder-opacity-100  icon-input11"
+                      className="   sm:py-2 py-1 sm:px-8 px-1      sm:rounded rounded-none custom-background1 placeholder-black placeholder-opacity-100  icon-input11"
                      
                     >San Fransisco, CA</button>
                     <button
-                      className=" sm:py-2 py-1 sm:px-8 px-2   sm:rounded rounded-none custom-background1 placeholder-black placeholder-opacity-100 sm:mx-4 mx-1  icon-input2"
+                      className=" sm:py-2 py-1 sm:px-8 px-1   sm:rounded rounded-none custom-background1 placeholder-black placeholder-opacity-100 sm:mx-4 mx-1  icon-input2"
                      
                     >Full Time</button>
                     </div>
                     
                     <div className="   sm:mt-2">
                     <button
-                      className="sm:text-lg text-xs custom-green1  sm:font-bold font-normal  sm:py-4 py-3     "
+                      className="sm:text-lg text-xs custom-green1  sm:font-bold font-normal  mt-6    "
                       type=" Apply Now "
                     >
                       Apply Now {">"}
@@ -116,7 +113,7 @@ const AddJob = () => {
 
     
 
-      <div className="  flex justify-center sm:mb-16 mb-8">
+      <div className="  flex justify-center sm:my-16 my-8">
         <button
           className="sm:text-lg text-xs custom-green1 bg-transparent sm:font-semibold font-normal sm:rounded-[10px] rounded-[3.5px] border-2  sm:w-[188px] w-[74px] sm:h-[61px] h-[24px] sm:px-3 px-1 sm:my-8 my-2"
           type="view more"

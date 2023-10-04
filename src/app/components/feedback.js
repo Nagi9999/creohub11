@@ -25,7 +25,7 @@ const Feedback = () => {
   };
 
   return (
-    <div className="2xl:container mx-auto">
+    <div className="2xl:container sm:px-20  mx-auto">
       <div className="flex flex-col sm:flex-row  sm:justify-between justify-center sm:my-20 my-8">
         <div className="sm:w-[60%]  mt-6 sm:text-justify text-center  sm:px-0 px-8">
           <h1 className="sm:text-5xl text-lg sm:tracking-normal tracking-tight font-bold  ">

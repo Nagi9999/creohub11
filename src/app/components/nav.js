@@ -18,7 +18,7 @@ export default function NavBar() {
 
   return (
     <div className="w-full   custom-family custom-background1 m-0 custom-border0">
-      <nav className="  2xl:container mx-auto flex sm:flex-row flex-col  justify-center   ">
+      <nav className="  2xl:container sm:px-20  mx-auto flex sm:flex-row flex-col  justify-center   ">
         <div className="  flex sm:justify-between justify-end sm:w-[60%] w-full    h-full   ">
           <div className="flex flex-col sm:max-w-[800px]  sm:px-20 px-0  sm:mr-auto  ">
             <div className="flex flex-row sm:justify-between justify-end sm:mt-16 mt-[13px] items-center">
@@ -169,5 +169,7 @@ export default function NavBar() {
         </div>
       </nav>
     </div>
+
+
   );
 }

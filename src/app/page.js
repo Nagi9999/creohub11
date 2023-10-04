@@ -14,8 +14,6 @@ export default function Home() {
       <How/>
       <Catego/>
      <AddJob/>
-     <Feedback/>
-     <Banner/>
     <Footer/>
       </main>
   )
