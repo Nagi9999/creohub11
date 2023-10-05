@@ -9,52 +9,50 @@ import "swiper/css/virtual";
 const Catego = () => {
   const Data = [
     {
-      icon: "/icons/bank.png ",
+      icon: "/icons/product.png",
+      icon1: "/icons/product1.png",
       title: "Design and Development",
       text: " 350 job vacancy",
     },
     {
       icon: "/icons/accounting.png",
+      icon1: "/icons/accounting1.png",
       title: "Accounting and Finance",
       text: "350 job vacancy",
     },
     {
       icon: "/icons/bank.png",
+      icon1: "/icons/bank1.png",
       title: "Bank Instituition",
       text: "350 job vacancy",
     },
     {
       icon: "/icons/product.png",
+      icon1: "/icons/product1.png",
       title: "Product Management",
       text: "350 job vacancy",
     },
     {
       icon: "/icons/product.png",
-      title: "Product Management",
-      text: "350 job vacancy",
-    },
-    {
-      icon: "/icons/bank.png ",
+      icon1: "/icons/product1.png",
       title: "Design and Development",
       text: " 350 job vacancy",
     },
     {
       icon: "/icons/accounting.png",
+      icon1: "/icons/accounting1.png",
       title: "Accounting and Finance",
       text: "350 job vacancy",
     },
     {
       icon: "/icons/bank.png",
+      icon1: "/icons/bank1.png",
       title: "Bank Instituition",
       text: "350 job vacancy",
     },
     {
       icon: "/icons/product.png",
-      title: "Product Management",
-      text: "350 job vacancy",
-    },
-    {
-      icon: "/icons/product.png",
+      icon1: "/icons/product1.png",
       title: "Product Management",
       text: "350 job vacancy",
     },
@@ -89,22 +87,28 @@ const Catego = () => {
             {Data.map((item, index) => {
               return (
                 <SwiperSlide
-                  key={item}
-                  virtualIndex={index}
-                  className="flex flex-col justify-between sm:pl-4 pl-3  sm:pr-8 pr-6 sm:py-10 py-3 custom-white0  sm:rounded-[20px] rounded-[7.4px] sm:mx-1 mx-0 text-justify   sm:my-8 my-4"
-                >
-                  <img
-                    src={item.icon}
-                    alt="Your Icon"
-                    className="sm:m-[23px] m-[11px] rounded-[10px] sm:w-[40px] w-[18px] sm:h-[40px] h-[18px]"
-                  />
-                  <h3 className="font-bold   sm:text-lg text-[10px] sm:pl-5 pl-1  sm:pr-[143px] pr-0 tracking-tight ">
-                    {item.title}
-                  </h3>
-                  <p className="sm:text-[10px] text-[8px]  text-gray-500 sm:pl-5 pl-1 sm:mt-10 mt-4">
-                    {item.text}
-                  </p>
-                </SwiperSlide>
+  key={item}
+  virtualIndex={index}
+  className="slide1 flex flex-col justify-between sm:pl-4 pl-3  sm:pr-8 pr-6 sm:py-10 py-3 custom-white0   sm:rounded-[20px] rounded-[7.4px] sm:mx-1 mx-0 text-justify   sm:my-8 my-4"
+>
+  <img
+    src={item.icon}
+    alt="Your Icon"
+    className="hover-icon sm:m-[23px] m-[5px] rounded-[10px] sm:w-[40px] w-[18px] sm:h-[40px] h-[18px]"
+  />
+  <img
+    src={item.icon1}
+    alt="Your Icon"
+    className="hover-icon1 hidden sm:m-[23px] m-[5px] rounded-[10px] sm:w-[40px] w-[18px] sm:h-[40px] h-[18px]"
+  />
+  <h3 className="font-bold   sm:text-lg text-[10px] sm:pl-5 pl-1  sm:pr-[143px] pr-0 tracking-tight ">
+    {item.title}
+  </h3>
+  <p className="sm:text-[10px] text-[8px]  text-gray-500 sm:pl-5 pl-1 sm:mt-10 mt-4">
+    {item.text}
+  </p>
+</SwiperSlide>
+
               );
             })}
           </Swiper>

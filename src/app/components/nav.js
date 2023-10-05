@@ -18,7 +18,7 @@ export default function NavBar() {
 
   return (
     <div className="w-full   custom-family custom-background1 m-0 custom-border0">
-      <nav className="  2xl:container sm:px-20  mx-auto flex sm:flex-row flex-col  justify-center   ">
+      <nav className="  2xl:container  mx-auto flex sm:flex-row flex-col  justify-center   ">
         <div className="  flex sm:justify-between justify-end sm:w-[60%] w-full    h-full   ">
           <div className="flex flex-col sm:max-w-[800px]  sm:px-20 px-0  sm:mr-auto  ">
             <div className="flex flex-row sm:justify-between justify-end sm:mt-16 mt-[13px] items-center">
@@ -98,7 +98,7 @@ export default function NavBar() {
               <div className="flex justify-between  sm:mt-[57px] mt-[20px] background-color  custom-white0   sm:rounded-[20px] rounded-[4.9px] sm:text-base text-[9px] items-center  ">
                 <div className="sm:my-[20px] my-[10px] text-black">
                   <input
-                    class=" sm:py-2 py-1 sm:rounded-[10px] rounded-[4.9px] custom-background1 placeholder-black placeholder-opacity-100 icon-input00 w-auto"
+                    class=" sm:py-2 py-1  sm:rounded-[10px] rounded-[4.9px] custom-background1 placeholder-black  placeholder-opacity-100 icon-input00 w-auto"
                     type="text"
                     placeholder="Job title or keyword"
                     required
@@ -113,8 +113,6 @@ export default function NavBar() {
                     required
                   />
                 </div>
-
-                <div></div>
                 <div>
                   <button
                     className="custom-green0 text-white sm:rounded-[10px] rounded-[4.9px] sm:py-2 py-1 sm:px-3 px-2 sm:m-[20px] m-[10px] "

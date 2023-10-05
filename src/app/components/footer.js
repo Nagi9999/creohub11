@@ -86,62 +86,74 @@ const Footer = () => {
         </div>
       </div>
       <div className="mx-auto custom-green0 text-white py-9">
-  <div className="2xl:container sm:px-20 sm:mx-auto mx-5 sm:pt-24 my-16 grid sm:grid-cols-3 justify-between grid-rows-1 sm:space-x-32 space-y-4">
-    <div className="  ">
-      <h1 className="sm:text-5xl text-3xl font-extrabold mt-6">
-        <span className="text-black">Job</span>NQw
-      </h1>
-      <p className="sm:text-sm text-xs mt-4">
-        {" "}
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio nec libero consequat facilisis. Nulla facilisi.
-      </p>
-    </div>
-    <div className="grid grid-cols-2 sm:space-x-24 space-x-10 sm:py-0 py-8  ">
-    <div className=" ">
-      <h1 className="sm:text-2xl text-xl font-semibold">Company</h1>
-      <ul className="sm:mt-4 mt-3 sm:text-sm text-[10px] space-y-3 ">
-        <li>Address: 123 Fifth Avenue, New York-1060, USA</li>
-        <li>Call Us: +(600) 456 7890</li>
-        <li>Email: yourid@example.com</li>
-        <li>Mon Sat: 9:00 AM - 19:00 PM</li>
-      </ul>
-    </div>
+        <div className="2xl:container sm:px-20 sm:mx-auto mx-5 sm:pt-24 my-16 grid sm:grid-cols-7 justify-between grid-rows-1  space-y-4">
+          <div className=" col-span-3 smpr-24 pr-16">
+            <h1 className="sm:text-5xl text-3xl font-extrabold mt-6">
+              <span className="text-black">Job</span>NQw
+            </h1>
+            <p className="sm:text-sm text-xs mt-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
+              odio nec libero consequat facilisis. Nulla facilisi.
+            </p>
+          </div>
+          <div className="col-span-2 sm:pr-24  pr-16">
+            <h1 className="sm:text-2xl text-xl font-semibold">Company</h1>
+            <ul className="sm:mt-4 mt-3 sm:text-sm text-[10px] space-y-3 ">
+              <li>Address: 123 Fifth Avenue, New York-1060, USA</li>
+              <li>Call Us: +(600) 456 7890</li>
+              <li>Email: yourid@example.com</li>
+              <li>Mon Sat: 9:00 AM - 19:00 PM</li>
+            </ul>
+          </div>
 
-    <div>
-      <h1 className="sm:text-2xl text-xl font-semibold">Pages</h1>
-      <div className="flex flex-col sm:mt-4 mt-3 sm:text-sm text-[10px] space-y-3">
-        {links.map((link, index) => (
-          <Link key={index} href={link.path}>
-            {"> "} {link.title}
-          </Link>
-        ))}
+          <div className="col-span-1">
+            <h1 className="sm:text-2xl text-xl font-semibold">Pages</h1>
+            <div className="flex flex-col sm:mt-4 mt-3 sm:text-sm text-[10px] space-y-3">
+              {links.map((link, index) => (
+                <Link key={index} href={link.path}>
+                  {"> "} {link.title}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div class="text-white ">
+            <h1 className="sm:text-2xl text-xl font-semibold">Contact Us</h1>
+            <div class="sm:mt-4 mt-1 space-x-4 flex">
+              <a href="www.facebook.com" class="no-underline text-white">
+                <img
+                  src="/icons/facebook.png"
+                  alt="Facebook"
+                  class="sm:w-6 w-4 sm:h-6 h-4"
+                />
+              </a>
+              <a href="www.google.com" class="no-underline text-white">
+                <img
+                  src="/icons/google.png"
+                  alt="Google"
+                  class="sm:w-6 w-4 sm:h-6 h-4"
+                />
+              </a>
+              <a href="www.linkedin.com" class="no-underline text-white">
+                <img
+                  src="/icons/linkedin.png"
+                  alt="LinkedIn"
+                  class="sm:w-6 w-4 sm:h-6 h-4"
+                />
+              </a>
+              <a href="www.twitter.com" class="no-underline text-white">
+                <img
+                  src="/icons/twitter.png"
+                  alt="Twitter"
+                  class="sm:w-6 w-4 sm:h-6 h-4"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
-    
 
-    <div class="text-white">
-      <h1 className="sm:text-2xl text-xl font-semibold">Contact Us</h1>
-      <div class="sm:mt-4 mt-1 space-x-4 flex">
-        <a href="www.facebook.com" class="no-underline text-white">
-          <img src="/icons/facebook.png" alt="Facebook" class="sm:w-6 w-4 sm:h-6 h-4" />
-        </a>
-        <a href="www.google.com" class="no-underline text-white">
-          <img src="/icons/google.png" alt="Google" class="sm:w-6 w-4 sm:h-6 h-4" />
-        </a>
-        <a href="www.linkedin.com" class="no-underline text-white">
-          <img src="/icons/linkedin.png" alt="LinkedIn" class="sm:w-6 w-4 sm:h-6 h-4" />
-        </a>
-        <a href="www.twitter.com" class="no-underline text-white">
-          <img src="/icons/twitter.png" alt="Twitter" class="sm:w-6 w-4 sm:h-6 h-4" />
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-      <div className=" 2xl:container sm:px-20 right-0 left-0  sm:bottom-[380px] bottom-[820px] absolute  sm:mx-auto   ">
+      <div className=" 2xl:container sm:px-20 right-0 left-0  sm:bottom-[380px] bottom-[500px] absolute  sm:mx-auto   ">
         <div className=" sm:mx-0 mx-[25px]  text-white     sm:rounded-[20px] rounded-[5.1px] custom-background5  ">
           <div className="flex flex-col justify-center mx-auto text-center sm:px-64 px-8  ">
             <h1 className="sm:text-3xl text-lg font-bold sm:my-8 my-2 ">
