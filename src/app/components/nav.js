@@ -17,7 +17,7 @@ export default function NavBar() {
   ];
 
   return (
-    <div className="w-full   custom-family custom-element m-0 custom-border0 ">
+    <div className="w-full   custom-family sm:custom-element custom-background1 m-0 custom-border0 ">
       <nav className="  2xl:container  mx-auto flex sm:flex-row flex-col  justify-center   ">
         <div className="  flex sm:justify-between justify-end sm:w-[60%] w-full    h-full   ">
           <div className="flex flex-col sm:max-w-[800px]  sm:px-20 px-0  sm:mr-auto  ">

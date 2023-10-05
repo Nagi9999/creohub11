@@ -99,7 +99,7 @@ const Catego = () => {
   <img
     src={item.icon1}
     alt="Your Icon"
-    className="hover-icon1 hidden sm:m-[23px] m-[5px] rounded-[10px] sm:w-[40px] w-[18px] sm:h-[40px] h-[18px]"
+    className="hover-icon1 hidden sm:m-[23px] m-[5px] sm:rounded-[10px] rounded-none  sm:w-[40px] w-[18px] sm:h-[40px] h-[18px]"
   />
   <h3 className="font-bold   sm:text-lg text-[10px] sm:pl-5 pl-1  sm:pr-[143px] pr-0 tracking-tight ">
     {item.title}

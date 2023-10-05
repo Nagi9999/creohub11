@@ -3,22 +3,22 @@ const How = () => {
     {
       icon: "/icons/register.png",
       title: "Register",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio nec libero consequat facilisis. Nulla facilisi. Sed ac lectus et metus convallis pellentesque. Vestibulum sit amet felis sit amet odio tristique volutpat.",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet felis sit amet odio tristique volutpat.",
     },
     {
       icon: "/icons/create.png",
       title: "Create a Resume",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio nec libero consequat facilisis. Nulla facilisi. Sed ac lectus et metus convallis pellentesque. Vestibulum sit amet felis sit amet odio tristique volutpat.",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet felis sit amet odio tristique volutpat.",
     },
     {
       icon: "/icons/find.png",
       title: "Find a job",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio nec libero consequat facilisis. Nulla facilisi. Sed ac lectus et metus convallis pellentesque. Vestibulum sit amet felis sit amet odio tristique volutpat.",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet felis sit amet odio tristique volutpat.",
     },
     {
       icon: "/icons/apply.png",
       title: "Apply job",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac odio nec libero consequat facilisis. Nulla facilisi. Sed ac lectus et metus convallis pellentesque. Vestibulum sit amet felis sit amet odio tristique volutpat.",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet felis sit amet odio tristique volutpat.",
     },
   ];
 
@@ -44,20 +44,20 @@ const How = () => {
           </button>
         </div>
 
-        <div className="flex sm:flex-row flex-wrap sm:justify-between justify-center sm:mt-16 mt-4">
+        <div className="grid sm:grid-cols-4 grid-cols-2  sm:justify-between justify-center sm:mt-16 mt-4">
           {Data.map((item) => {
             return (
               <div
                 key={item.title} 
-                className="sm:h-[219px] h-[100px] sm:w-[286px] w-[131px] custom-white0 rounded-md mx-4 text-justify items-center sm:px-6 px-2 sm:my-8 my-16 "
+                className="p-[20px] col-span-1 custom-white0 rounded-md mx-4  text-justify items-center sm:px-6 px-4 sm:py-10 sm:my-6 my-4 "
               >
                 <img
                   src={item.icon}
                   alt="Your Icon"
-                  className="sm:m-[23px] m-[11px] rounded-[10px] sm:w-[40px] w-[23px] sm:h-[40px] h-[23px]"
+                  className="sm:mt-[2px] sm:w-auto w-5 sm:h-auto h-5 my-[5px] sm:rounded-[10px] rounded-none "
                 />
-                <h3 className="font-bold   sm:text-lg text-sm">{item.title}</h3>
-                <p className="sm:mt-4 mt-2 sm:text-[10px] text-[8px] text-gray-500">{item.text}</p>
+                <h3 className="font-bold   sm:text-lg text-sm sm:mt-4 sm:tracking-normal tracking-tight ">{item.title}</h3>
+                <p className="sm:mt-4 mt-2 pr-8 sm:text-[10px] text-[8px] text-gray-500 sm:tracking-normal tracking-tighter">{item.text}</p>
               </div>
             );
           })}
