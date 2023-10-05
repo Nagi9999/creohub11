@@ -30,6 +30,9 @@
 .custom-background1 {
   background-color: #f2f2f2;
 }
+.custom-gray0{
+color:#f2f2f2 ;
+}
 
 .custom-border0 {
   border-color: #000000;
@@ -37,6 +40,10 @@
 
 .custom-white0 {
   background-color: #ffffff;
+}
+
+.custom-element {
+  background: linear-gradient(to right, #f2f2f2 60%, #00cc99 40%);
 }
 
 .custom-family {
