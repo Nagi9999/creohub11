@@ -37,7 +37,7 @@ const How = () => {
             tristique volutpat.
           </p>
           <button
-            className="sm:block hidden custom-green1 font-semibold rounded-[10px] border-2 border-custom-green1 sm:w-[188px] w-[74px] sm:h-[61px] h-[24px] px-3 mt-4 sm:mt-0"
+            className="sm:block hidden custom-green1 font-semibold rounded-[10px] border-2 border-custom-green1 sm:py-4 py-2  sm:px-8 px-4  mt-4 sm:mt-0"
             type="learn more"
           >
             Learn More
@@ -49,7 +49,7 @@ const How = () => {
             return (
               <div
                 key={item.title} 
-                className="p-[20px] col-span-1 custom-white0 rounded-md mx-4  text-justify items-center sm:px-6 px-4 sm:py-10 sm:my-6 my-4 "
+                className="p-[20px] col-span-1 custom-white0 rounded-md sm:mx-4 mx-3 text-justify items-center sm:px-6 px-3 sm:py-10 py-4 sm:my-6 my-3 "
               >
                 <img
                   src={item.icon}
@@ -57,7 +57,7 @@ const How = () => {
                   className="sm:mt-[2px] sm:w-auto w-5 sm:h-auto h-5 my-[5px] sm:rounded-[10px] rounded-none "
                 />
                 <h3 className="font-bold   sm:text-lg text-sm sm:mt-4 sm:tracking-normal tracking-tight ">{item.title}</h3>
-                <p className="sm:mt-4 mt-2 pr-8 sm:text-[10px] text-[8px] text-gray-500 sm:tracking-normal tracking-tighter">{item.text}</p>
+                <p className="sm:mt-4 mt-2 pr-4 sm:text-[10px] text-[8px] text-gray-500 sm:tracking-normal tracking-tighter">{item.text}</p>
               </div>
             );
           })}
@@ -65,7 +65,7 @@ const How = () => {
 
         <div className="sm:hidden  flex justify-center mt-6">
         <button
-            className="sm:text-lg text-xs custom-green1 sm:font-semibold font-normal sm:rounded-[10px] rounded-[3.5px] sm:border-4 border-2 border-custom-green1 sm:w-[188px] w-[74px] sm:h-[61px] h-[24px] sm:px-3 px-1 mt-8"
+            className="sm:text-lg text-xs custom-green1 sm:font-semibold font-normal sm:rounded-[10px] rounded-[3.5px] sm:border-4 border-2 border-custom-green1 sm:py-4 py-2  sm:px-8 px-4  sm:mt-8"
             type="submit"
           >
             Learn More
@@ -73,8 +73,8 @@ const How = () => {
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row  sm:justify-between justify-center sm:my-32 my-16">
-        <div className="sm:w-[40%] w-[285px] sm:rounded-[20px] rounded-[11px] sm:h-[450px] h-[210px] custom-background3  mt-4 sm:mx-0 mx-auto"></div>
+      <div className="flex flex-col sm:flex-row  sm:justify-between justify-center sm:my-32 my-12">
+        <div className="sm:w-[40%] w-[285px] sm:rounded-[20px] rounded-[11px] sm:h-[450px] h-[210px] custom-background3  sm:mt-4  sm:mx-0 mx-auto"></div>
         <div className="sm:w-[50%] ml-2 mt-12 sm:text-justify text-center  sm:px-0 px-3">
           <h1 className="sm:text-5xl text-xl font-semibold ">
             We will help you to become an employee in your dream company
@@ -87,7 +87,7 @@ const How = () => {
           </p>
 
           <button
-            className="sm:text-lg text-xs custom-green1 sm:font-semibold font-normal sm:rounded-[10px] rounded-[3.5px]  border-2 border-custom-green1 sm:w-[188px] w-[74px] sm:h-[61px] h-[24px] sm:px-3 px-1 sm:mt-8 mt-6"
+            className="sm:text-lg text-xs custom-green1 sm:font-semibold font-normal sm:rounded-[10px] rounded-[3.5px]  border-2 border-custom-green1 sm:py-4 py-2  sm:px-8 px-4 sm:mt-8 mt-6"
             type="submit"
           >
             Learn More

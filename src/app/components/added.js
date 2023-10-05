@@ -33,7 +33,7 @@ const AddJob = () => {
 
   return (
     <div className="custom-background2 custom-family">
-      <div className="2xl:container sm:px-20 mx-auto flex flex-col justify-center  sm:pt-16   ">
+      <div className="2xl:container sm:px-20 sm:mx-auto mx-1 flex flex-col justify-center  sm:pt-16   ">
       <div className="flex flex-col justify-center mx-auto text-center sm:max-w-[55%] max-w-[90%]  ">
         <h1 className="sm:text-4xl text-xl font-extrabold sm:my-8 my-4 ">
           Recently Added Jobs
@@ -65,7 +65,7 @@ const AddJob = () => {
               <SwiperSlide key={item} virtualIndex={index}>
                 <div
                   key={item.title}
-                  className=" flex flex-col  sm:px-[30px] px-[5px] sm:py-[50px] py-[20px] custom-white0 sm:rounded-md rounded-[7.4px]  text-justify     "
+                  className=" flex flex-col  sm:px-[30px] pl-[16px] sm:py-[50px] py-[10px] custom-white0 sm:rounded-md rounded-[7.4px]  text-justify     "
                 >
                   <img
                     src={item.icon}
@@ -85,11 +85,11 @@ const AddJob = () => {
                   <div className=" sm:my-6 my-4 text-black font-bold sm:text-xs text-[8px] ">
                     <div >
                       <button
-                      className="   sm:py-2 py-1 sm:px-8 px-0      sm:rounded rounded-none custom-background1 placeholder-black placeholder-opacity-100 tracking-tight  icon-input4"
+                      className="   sm:py-2 py-1 sm:px-8 px-[2px]      sm:rounded rounded-[3.1px] custom-background1 placeholder-black placeholder-opacity-100 tracking-tight  icon-input4"
                      
                     >San Fransisco, CA</button>
                     <button
-                      className=" sm:py-2 py-1 sm:px-8 px-1   sm:rounded rounded-none custom-background1 placeholder-black placeholder-opacity-100 sm:mx-4 mx-[2px] tracking-tight icon-input2"
+                      className=" sm:py-2 py-1 sm:px-8 px-[2px]   sm:rounded rounded-[3.1px] custom-background1 placeholder-black placeholder-opacity-100 sm:mx-4 mx-[3px] tracking-tight icon-input2"
                      
                     >Full Time</button>
                     </div>
@@ -115,7 +115,7 @@ const AddJob = () => {
 
       <div className="  flex justify-center sm:my-16 my-8">
         <button
-          className="sm:text-lg text-xs custom-green1 bg-transparent sm:font-semibold font-normal sm:rounded-[10px] rounded-[3.5px] border-2  sm:w-[188px] w-[74px] sm:h-[61px] h-[24px] sm:px-3 px-1 sm:my-8 my-2"
+          className="sm:text-lg text-xs custom-green1 bg-transparent sm:font-semibold font-normal sm:rounded-[10px] rounded-[3.5px] border-2  sm:py-4 py-2  sm:px-8 px-4  sm:my-8 my-2"
           type="view more"
         >
           View More

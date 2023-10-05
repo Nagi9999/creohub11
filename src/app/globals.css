@@ -43,7 +43,7 @@ color:#f2f2f2 ;
 }
 
 .custom-element {
-  background: linear-gradient(to right, #f2f2f2 60%, #00cc99 40%);
+  background: linear-gradient(to right, #f2f2f2 60%, #00cc99 40%) !important ; 
 }
 
 .custom-family {

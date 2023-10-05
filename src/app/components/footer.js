@@ -85,7 +85,7 @@ const Footer = () => {
           <div className="sm:flex hidden  sm:w-[474px] w-[187px] sm:rounded-[20px] rounded-[7.7px] sm:h-[484px] h-[183px] custom-green0  my-24 sm:mx-0 mx-auto"></div>
         </div>
       </div>
-      <div className="mx-auto custom-green0 text-white py-9">
+      <div className="mx-auto custom-green0 text-white sm:py-9 py-1">
         <div className="2xl:container sm:px-20 sm:mx-auto mx-5 sm:pt-24 my-16 grid sm:grid-cols-7 justify-between grid-rows-1  space-y-4">
           <div className=" col-span-3 smpr-24 pr-16">
             <h1 className="sm:text-5xl text-3xl font-extrabold mt-6">
@@ -119,7 +119,7 @@ const Footer = () => {
 
           <div class="text-white ">
             <h1 className="sm:text-2xl text-xl font-semibold">Contact Us</h1>
-            <div class="sm:mt-4 mt-1 space-x-4 flex">
+            <div class="sm:mt-4 mt-2 space-x-4 flex">
               <a href="www.facebook.com" class="no-underline text-white">
                 <img
                   src="/icons/facebook.png"
@@ -153,7 +153,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className=" 2xl:container sm:px-20 right-0 left-0  sm:bottom-[380px] bottom-[500px] absolute  sm:mx-auto   ">
+      <div className=" 2xl:container sm:px-20 right-0 left-0  sm:bottom-[380px] bottom-[450px] absolute  sm:mx-auto   ">
         <div className=" sm:mx-0 mx-[25px]  text-white     sm:rounded-[20px] rounded-[5.1px] custom-background5  ">
           <div className="flex flex-col justify-center mx-auto text-center sm:px-64 px-8  ">
             <h1 className="sm:text-3xl text-lg font-bold sm:my-8 my-2 ">

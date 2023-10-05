@@ -21,13 +21,29 @@ export default function NavBar() {
       <nav className="  2xl:container  mx-auto flex sm:flex-row flex-col  justify-center   ">
         <div className="  flex sm:justify-between justify-end sm:w-[60%] w-full    h-full   ">
           <div className="flex flex-col sm:max-w-[800px]  sm:px-20 px-0  sm:mr-auto  ">
-            <div className="flex flex-row sm:justify-between justify-end sm:mt-16 mt-[13px] items-center">
+            <div className="flex flex-row sm:justify-between justify-end sm:mt-16 mt-5 ">
               <div className="  font-extrabold	sm:text-5xl text-3xl ">
                 <span className="text-black">Job</span>
                 <span className="custom-green1">NQw</span>
+
+                <div className={" sm:hidden custom-background1 absolute right-0 left-0 my-2    "}>
+              <ul
+                className={`sm:flex sm:flex-row flex-col font-semibold  text-sm  my-4   items-center     ${
+                  menuOpen ? "flex" : "hidden"
+                }  sm:space-y-0 space-y-2 mt-3`}
+              >
+                {menuItems.map((item, index) => (
+                  <li key={index}>
+                    <Link href={item.path}>
+                      <span>{item.title}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
               </div>
 
-              <div className="sm:hidden items-center ml-[20%] mr-5    ">
+              <div className="sm:hidden items-center ml-[20%] mr-5 mt-1   ">
                 <button
                   onClick={toggleMenu}
                   className="text-white w-[36px] h-[29px]    rounded-[4px] "
@@ -54,7 +70,7 @@ export default function NavBar() {
                 </button>
               </div>
 
-              <div className={"hidden sm:block"}>
+              <div className={"hidden sm:block "}>
                 <ul className=" flex   justify-between  text-lg  sm:space-x-[52px]  font-semibold  ">
                   {menuItems.map((item, index) => (
                     <li key={index}>
@@ -66,21 +82,7 @@ export default function NavBar() {
                 </ul>
               </div>
             </div>
-            <div className={" sm:hidden  block"}>
-              <ul
-                className={`sm:flex sm:flex-row flex-col font-semibold  justify-center items-center ${
-                  menuOpen ? "flex" : "hidden"
-                } sm:space-x-4 space-x-0 sm:space-y-0 space-y-2 mt-3`}
-              >
-                {menuItems.map((item, index) => (
-                  <li key={index}>
-                    <Link href={item.path}>
-                      <span>{item.title}</span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            
 
             <div class="  sm:mt-32 mt-6 pt-10 sm:bg-transparent custom-background2 sm:pb-0 pb-16 sm:px-0 ">
               <div className="sm:text-justify text-center sm:mx-0 mx-8   ">
