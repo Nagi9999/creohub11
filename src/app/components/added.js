@@ -50,7 +50,7 @@ const AddJob = () => {
         <Swiper modules={[Virtual]} spaceBetween={19} slidesPerView={2} virtual  
         breakpoints={
           {
-            640:{slidesPerView:2,spaceBetween:19,
+            640:{slidesPerView:2,spaceBetween:12,
             },
             768:{slidesPerView:2,spaceBetween:30,
             },
@@ -65,7 +65,7 @@ const AddJob = () => {
               <SwiperSlide key={item} virtualIndex={index}>
                 <div
                   key={item.title}
-                  className=" flex flex-col justify-between sm:px-[30px] px-[15px] sm:py-[50px] py-[20px] custom-white0 sm:rounded-md rounded-[7.4px]  text-justify     "
+                  className=" flex flex-col  sm:px-[30px] px-[5px] sm:py-[50px] py-[20px] custom-white0 sm:rounded-md rounded-[7.4px]  text-justify     "
                 >
                   <img
                     src={item.icon}
@@ -85,11 +85,11 @@ const AddJob = () => {
                   <div className=" sm:my-6 my-4 text-black font-bold sm:text-xs text-[8px] ">
                     <div >
                       <button
-                      className="   sm:py-2 py-1 sm:px-8 px-1      sm:rounded rounded-none custom-background1 placeholder-black placeholder-opacity-100  icon-input11"
+                      className="   sm:py-2 py-1 sm:px-8 px-0      sm:rounded rounded-none custom-background1 placeholder-black placeholder-opacity-100 tracking-tight  icon-input4"
                      
                     >San Fransisco, CA</button>
                     <button
-                      className=" sm:py-2 py-1 sm:px-8 px-1   sm:rounded rounded-none custom-background1 placeholder-black placeholder-opacity-100 sm:mx-4 mx-1  icon-input2"
+                      className=" sm:py-2 py-1 sm:px-8 px-1   sm:rounded rounded-none custom-background1 placeholder-black placeholder-opacity-100 sm:mx-4 mx-[2px] tracking-tight icon-input2"
                      
                     >Full Time</button>
                     </div>
