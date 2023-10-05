@@ -17,11 +17,11 @@ export default function NavBar() {
   ];
 
   return (
-    <div className="w-full   custom-family sm:custom-element custom-background1 m-0 custom-border0 ">
+    <div className="w-full   custom-family sm:custom-element custom-background1    m-0 custom-border0 ">
       <nav className="  2xl:container  mx-auto flex sm:flex-row flex-col  justify-center   ">
         <div className="  flex sm:justify-between justify-end sm:w-[60%] w-full    h-full   ">
           <div className="flex flex-col sm:max-w-[800px]  sm:px-20 px-0  sm:mr-auto  ">
-            <div className="flex flex-row sm:justify-between justify-end sm:mt-16 mt-5 ">
+            <div className="flex flex-row sm:justify-between  justify-end sm:mt-16 mt-5 ">
               <div className="  font-extrabold	sm:text-5xl text-3xl ">
                 <span className="text-black">Job</span>
                 <span className="custom-green1">NQw</span>
@@ -43,7 +43,7 @@ export default function NavBar() {
             </div>
               </div>
 
-              <div className="sm:hidden items-center ml-[20%] mr-5 mt-1   ">
+              <div className="sm:hidden items-center  ml-[20%] mr-5 mt-1   ">
                 <button
                   onClick={toggleMenu}
                   className="text-white w-[36px] h-[29px]    rounded-[4px] "

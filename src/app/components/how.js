@@ -36,12 +36,14 @@ const How = () => {
             convallis pellentesque. Vestibulum sit amet felis sit amet odio
             tristique volutpat.
           </p>
-          <button
-            className="sm:block hidden custom-green1 font-semibold rounded-[10px] border-2 border-custom-green1 sm:py-4 py-2  sm:px-8 px-4  mt-4 sm:mt-0"
-            type="learn more"
+          <div className="hidden  sm:flex justify-center mt-6">
+        <button
+            className="sm:text-lg text-xs custom-green1 sm:font-semibold font-normal sm:rounded-[10px] rounded-[3.5px] border-2 border-custom-green1 sm:py-4 py-2  sm:px-8 px-4  sm:mt-8"
+            type="submit"
           >
             Learn More
           </button>
+        </div>
         </div>
 
         <div className="grid sm:grid-cols-4 grid-cols-2  sm:justify-between justify-center sm:mt-16 mt-4">
