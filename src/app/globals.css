@@ -4,6 +4,7 @@
 
 .custom-green0 {
   background-color: #00cc99;
+  pointer-events: none;
 }
 .custom-green00 {
   background-color: #00cc99;

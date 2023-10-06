@@ -113,7 +113,7 @@ const AddJob = () => {
 
     
 
-      <div className="  flex justify-center sm:my-16 my-8">
+      <div className="  flex justify-center sm:my-10 my-8">
         <button
           className="sm:text-lg text-xs custom-green1 bg-transparent sm:font-semibold font-normal sm:rounded-[10px] rounded-[3.5px] border-2  sm:py-4 py-2  sm:px-8 px-4  sm:my-8 my-2"
           type="view more"

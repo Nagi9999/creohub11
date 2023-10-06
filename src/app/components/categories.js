@@ -94,7 +94,7 @@ const Catego = () => {
   <img
     src={item.icon}
     alt="Your Icon"
-    className="hover-icon sm:m-[23px] m-[5px] rounded-[10px] sm:w-[40px] w-[18px] sm:h-[40px] h-[18px]"
+    className="hover-icon sm:m-[23px] m-[5px] sm:rounded-[10px] rounded-none sm:w-[40px] w-[18px] sm:h-[40px] h-[18px]"
   />
   <img
     src={item.icon1}
@@ -114,10 +114,10 @@ const Catego = () => {
           </Swiper>
         </div>
 
-        <div className="  flex justify-center sm:mb-16 mb-6">
+        <div className="  flex justify-center sm:mb-16 mb-6 ">
           <button
-            className="sm:text-lg text-xs custom-green1 bg-transparent sm:font-semibold font-normal sm:rounded-[10px] rounded-[3.5px]  border-2  sm:py-4 py-2  sm:px-8 px-4  my-8"
-            type="view more"
+            className="sm:text-lg text-xs custom-green1 bg-transparent sm:font-semibold font-normal sm:rounded-[10px] rounded-[3.5px]  border-2  sm:py-4 py-2  sm:px-8 px-4  my-8 cursor-pointer "
+            type="button"
           >
             View More
           </button>

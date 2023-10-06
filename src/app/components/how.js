@@ -75,9 +75,9 @@ const How = () => {
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row  sm:justify-between justify-center sm:my-32 my-12">
-        <div className="sm:w-[40%] w-[285px] sm:rounded-[20px] rounded-[11px] sm:h-[450px] h-[210px] custom-background3  sm:mt-4  sm:mx-0 mx-auto"></div>
-        <div className="sm:w-[50%] ml-2 mt-12 sm:text-justify text-center  sm:px-0 px-3">
+      <div className="flex flex-col sm:grid grid-cols-2   justify-center sm:my-32 my-12">
+        <div className="sm:col-span-1 sm:w-[600px] w-[285px] sm:rounded-[20px] rounded-[11px] sm:h-[450px] h-[210px] custom-background3  sm:mt-4  sm:mx-0 mx-auto"></div>
+        <div className="sm:col-span-1 sm:w-[670px]  mt-12 sm:text-justify text-center  sm:px-0 px-3">
           <h1 className="sm:text-5xl text-xl font-semibold ">
             We will help you to become an employee in your dream company
           </h1>

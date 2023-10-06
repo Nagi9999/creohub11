@@ -18,12 +18,12 @@ export default function NavBar() {
 
   return (
     <div className="w-full   custom-family sm:custom-element custom-background1    m-0 custom-border0 ">
-      <nav className="  2xl:container  mx-auto flex sm:flex-row flex-col  justify-center   ">
+      <nav className="  2xl:container  mx-auto flex sm:flex-row flex-col  justify-center    ">
         <div className="  flex sm:justify-between justify-end sm:w-[60%] w-full    h-full   ">
           <div className="flex flex-col sm:max-w-[800px]  sm:px-20 px-0  sm:mr-auto  ">
             <div className="flex flex-row sm:justify-between  justify-end sm:mt-16 mt-5 ">
-              <div className="  font-extrabold	sm:text-5xl text-3xl ">
-                <span className="text-black">Job</span>
+              <div className="  font-extrabold	sm:text-5xl text-3xl  ">
+                <span className="text-black ">Job</span>
                 <span className="custom-green1">NQw</span>
 
                 <div className={" sm:hidden custom-background1 absolute right-0 left-0 my-2    "}>
@@ -70,7 +70,7 @@ export default function NavBar() {
                 </button>
               </div>
 
-              <div className={"hidden sm:block "}>
+              <div className={"hidden sm:flex items-center "}>
                 <ul className=" flex   justify-between  text-lg  sm:space-x-[52px]  font-semibold  ">
                   {menuItems.map((item, index) => (
                     <li key={index}>
